@@ -21,5 +21,9 @@ countLetters('Hello my name is John', 'i') returns 1
 countLetters('Hello my name is John', 'h') returns 2
 countLetters('We love this city a lot, sometimes', 'e') returns 4 */
 
-const countLetters = (word, letter) => word.split(letter).length - 1;
+const countLetters = (word, letter) => {
+    word = word.toLowerCase();
+    letter = letter.toLowerCase();
+    return word.split(letter).length - 1;
+};
 
